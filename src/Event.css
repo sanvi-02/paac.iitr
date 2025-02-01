@@ -1,0 +1,111 @@
+.events-section {
+  text-align: center;
+  padding: 40px;
+  background: black;
+  color: white;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #f4a261;
+}
+
+.event-slider {
+  margin-bottom: 50px;
+}
+
+.event-card {
+  max-width: 400px;
+  background: black no-repeat center center/cover;
+  padding: 15px; /* Increased padding for better spacing */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 2px solid black; /* Keeping the border */
+  overflow: hidden; /* Prevents content overflow */
+}
+.event-card1 {
+  max-width: 600px; /* Increased for better spacing with the new layout */
+  background: black;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-direction: row; /* Switch to row layout */
+  align-items: flex-start; /* Align items to the top */
+  border: 2px solid black;
+  overflow: hidden;
+  gap: 20px; /* Space between image and text content */
+}
+
+
+.event-card:hover {
+  transform: scale(1.05);
+}
+
+
+ .event-image {
+   width: 50%;
+            border-radius: 5px;
+            margin-bottom: 5px;
+}
+ .event-image1 {
+   width: 50%;
+            border-radius: 5px;
+            margin-bottom: 5px;
+         
+}
+
+
+
+.event-title {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+.event-title1 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+   bottom: 20px; /* Push the date to the bottom */
+  left: 25%;
+}
+
+.event-date {
+  font-size: 1rem;
+  color: #f4a261;
+}
+.event-date1 {
+  position: absolute;
+  bottom: 20px; /* Push the date to the bottom */
+  left: 25%;
+  transform: translateX(-50%);
+  font-size: 1rem;
+  color: #f4a261;
+  background: rgba(0, 0, 0, 0.8); /* Slight background for contrast */
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+
+.event-description {
+  font-size: 1rem;
+  color: #d1d1d1;
+  text-align:center;
+}
+
+.past-events {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.past-event-card {
+  border: 2px solid #f4a261;
+}

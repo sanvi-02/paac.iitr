@@ -1,0 +1,53 @@
+/* Section Styles */
+.achievement-section {
+  background-color: black;
+  padding: 20px;
+  color: white;
+}
+
+/* Heading Styles */
+.heading {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #f4a261; /* Highlighted orange */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Accordion Styles */
+.accordion {
+  background-color: black;
+  font-size: 1.5rem;
+}
+
+.accordion-item {
+  background-color: black;
+  border: 1px solid #f4a261;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.accordion-header {
+  background-color: black;
+}
+
+.accordion-button {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #1f2833; /* Darker shade for active state */
+  color: #f4a261; /* Highlighted orange for active text */
+}
+
+.accordion-body {
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+}
