@@ -1,11 +1,11 @@
-/* Header Section */
+
 .header-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Full-screen height */
-  background: black;
+  height: 100vh; 
+  background: rgba(13,13,11,255);
    background: url('background.jpeg') no-repeat center center/cover;
   color: #f4a261;
   text-align: center;
@@ -15,16 +15,17 @@
 .header-title {
   font-size: 3rem;
   margin-bottom: 10px;
+  
 }
 
 .header-subtitle {
   font-size: 1.5rem;
   color: #f4a261;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
 }
-
-/* About Section */
 .about-container {
-  background: #0b0c10;
+  background: rgba(13,13,11,255);
   color: white;
   text-align: center;
   padding: 50px 20px;
@@ -32,8 +33,10 @@
 
 .about-title {
   font-size: 2rem;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   color: #f4a261;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .about-text {
@@ -42,4 +45,60 @@
   max-width: 800px;
   margin: auto;
   color: #d1d1d1;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.gallery-container {
+  padding: 50px;
+  background-color:rgba(13,13,11,255);
+}
+.gallery-title {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color:#f4a261 ;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 40px;
+  justify-items: center;
+}
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.gallery-image:hover {
+  transform: scale(1.05);
+}
+.new-heading{
+  text-align: center;
+   color: #f4a261 ;
+   font-family: 'Times New Roman', Times, serif;
+}
+.meet-team-link{
+  text-align: center;
+  color: #d1d1d1;
+
+}
+.meet-team-box-container {
+  display: inline-block;
+  background-color: #ffffff;
+  padding: 20px;
+  border: 2px solid #d1d1d1;
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+.meet-team-box:hover {
+color: #f4a261; 
 }

@@ -6,25 +6,24 @@ import About from "./components.js/About";
 import Event from "./Event.js";
 import Contact from "./components.js/Contact";
 import Blog from "./Blog.js";
-import Achievements from "./Achievements.js"
-
+import Achievements from "./Achievements.js";
 
 import "./App.css";
+
 function App() {
   return (
-
-    <Router> 
-      <div className="app-container"> {/* ✅ Wrap everything inside Router */}
-      <Navbar />
-      <Routes>
-        <Route path="/Home" element={<Header />} />  {/* Home Page */}
-         <Route path="/event" element={<Event/>} />  {/* About Page */}
-          <Route path="/Achievements" element={<Achievements/>} />  {/* About Page */}
-           <Route path="/Blog" element={<Blog/>} />  {/* About Page */}
-        <Route path="/about" element={<About />} />  {/* About Page */}
+    <Router>
+      <div className="app-container"> 
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Header />} />  
+          <Route path="/event" element={<Event />} />  
+          <Route path="/achievements" element={<Achievements />} />  
+          <Route path="/blog" element={<Blog />} />  
+          <Route path="/about" element={<About />} /> 
         </Routes>
-        <Contact/>
-        </div>
+        <Contact />
+      </div>
     </Router>
   );
 }

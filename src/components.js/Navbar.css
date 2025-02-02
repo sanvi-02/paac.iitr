@@ -1,0 +1,18 @@
+.paac-logo {
+  height: 50px; 
+  width: auto;  
+}
+.navbar {
+  background-color: black !important; 
+}
+.navbar-nav .nav-link {
+  color: white !important; 
+}
+
+.navbar-nav .nav-link.active {
+  color: white !important; 
+}
+.navbar-nav .nav-item .nav-link:hover {
+  color: #f4a261 !important; 
+  transition: color 0.3s ease;
+}

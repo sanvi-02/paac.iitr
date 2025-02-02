@@ -1,0 +1,28 @@
+.team-title{
+    color: #f4a261 ;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding: 2em;
+}
+.team-members {
+  display: flex;
+  justify-content: center; 
+  gap: 30px; 
+  flex-wrap: wrap; 
+}
+.team-member {
+  width: 300px; /* Set the width for each member card */
+  text-align: center;
+  margin-bottom: 20px;
+}
+.team-img{
+    width: 50%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.team-name{
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color:  #f4a261  ;
+}

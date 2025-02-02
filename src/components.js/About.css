@@ -1,16 +1,21 @@
 .about-container {
-  text-align: center;
-  padding: 50px;
-  color: #f4a261;
-}
-
-.about-title {
-  font-size: 2.5rem;
-  font-weight: bold;
+  display: flex;
+  flex-direction: column; 
+  gap: 40px; 
+  padding: 20px;
 }
 
 .about-text {
-  font-size: 1.2rem;
-  margin-top: 10px;
-  color: #d1d1d1;
+  text-align: center;
 }
+
+.team-section {
+  display: block;
+  text-align: center;
+}
+.highlight {
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+

@@ -1,6 +1,4 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -9,7 +7,7 @@ import "./Event.css";
 const events = [
   {
     title: "Cosmic Voyage",
-    date: "March 2025", // Change to future date (upcoming)
+    date: "March 2025", 
     description:
       "PaAC is back with Cosmic Voyage, our annual cosmic fiesta. With lectures from esteemed professors, open discussions, and exciting quizzes!",
     image: "voyage.jpg",
@@ -20,7 +18,7 @@ const events = [
     date: "August 2023",
     description:
       "Join us for an immersive space journey with expert talks, hands-on telescope sessions, and thrilling space quizzes!",
-    image: "/assets/image2.jpg",
+    image: "event3.jpg",
     upcoming: true,
   },
   {
@@ -33,14 +31,14 @@ const events = [
   },
   {
     title: "Astrophotog workshops",
-    date: "March 2025", // Change to future date (upcoming)
+    date: "March 2025", 
     description:"An artistic approach to photographing the night sky. You’ll get to learn how to capture fancy images like these and process them, here!",
     image: "event3.jpg",
     upcoming: false,
   },
   {
     title: "Integration Bee",
-    date: "October 2023", // Change to future date (upcoming)
+    date: "October 2023", 
     description:
       "PaAC brings you IITR’s own Integration Bee this year! Deriving inspiration from MIT’s Integration Bee, the tournament will be conducted by integrating the same spirit with our fun and quirky elements.",
     upcoming: false,
@@ -48,7 +46,7 @@ const events = [
   },
     {
     title: "Guest Lectures",
-    date: "March 21, 2023", // Change to future date (upcoming)
+    date: "March 21, 2023", 
     description:
       "These lectures cover a wide range of topics and aim to inspire and educate students. They offer an opportunity to learn from experienced professionals and gain a deeper understanding of various subjects.",
     upcoming: false,
@@ -56,7 +54,7 @@ const events = [
   },
     {
     title: "Journal Club",
-    date: "September 6, 2023", // Change to future date (upcoming)
+    date: "September 6, 2023", 
     description:
      "Journal Club is a platform for students to discuss and analyze recent scientific papers in the field of physics. It provides an opportunity to delve deeper into various research topics and gain insights from peers.",
     upcoming: false,
@@ -64,7 +62,7 @@ const events = [
   },
   {
     title: "Student Lectures",
-    date: "October 2023", // Change to future date (upcoming)
+    date: "October 2023", 
     description:
      "These lectures are conducted by students intended for fellow students. The topics are fundamental that are commonly challenging or difficult to understand.",
     upcoming: false,
@@ -79,41 +77,29 @@ const EventsSection = () => {
   return (
     <div class="stars">
     <div className="events-section">
-      {/* Title for upcoming events */}
-      <h1 className="section-title">🚀 Upcoming Events</h1>
-
-      {/* Swiper for upcoming events */}
-      <Swiper
-        modules={[Navigation, Pagination, Autoplay]}
-        navigation
-        pagination={{ clickable: true }}
-        autoplay={{ delay: 5000 }}
-        loop
-        className="event-slider"
-      >
+      <h1 className="section-title"> Upcoming Events</h1>
+       <div className="past-events">
         {upcomingEvents.map((event, index) => (
-          <SwiperSlide key={index}>
-            <div className="event-card1">
-              <img src={event.image} alt={event.title} className="event-image1" />
-              <h2 className="event-title1">{event.title}</h2>
-              <p className="event-date1">📅 {event.date}</p>
-              <p className="event-description1">{event.description}</p>
+          <div className="event-card past-event-card" key={index}>
+            <img src={event.image} alt={event.title} className="event-image" />
+            <div className="card-details">
+              <h2 className="event-title">{event.title}</h2>
+              <p className="event-date">📅 {event.date}</p>
+              <p className="event-description">{event.description}</p>
             </div>
-          </SwiperSlide>
+          </div>
         ))}
-      </Swiper>
-
-      {/* Title for past events */}
-      <h1 className="section-title">⭐ Past Events</h1>
-
-      {/* Display past events without slider */}
+      </div>
+      <h1 className="section-title">Past Events</h1>
       <div className="past-events">
         {pastEvents.map((event, index) => (
           <div className="event-card past-event-card" key={index}>
             <img src={event.image} alt={event.title} className="event-image" />
-            <h2 className="event-title">{event.title}</h2>
-            <p className="event-date">📅 {event.date}</p>
-            <p className="event-description">{event.description}</p>
+            <div  className="card-details">
+               <h2 className="event-title">{event.title}</h2>
+               <p className="event-date">📅 {event.date}</p>
+               <p className="event-description">{event.description}</p>
+            </div>
           </div>
         ))}
       </div>
